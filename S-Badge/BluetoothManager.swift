@@ -7,6 +7,7 @@
 import Foundation
 import CoreBluetooth
 import UserNotifications
+import Intents
 
 class BluetoothManager: NSObject, CBCentralManagerDelegate {
     var centralManager: CBCentralManager!
@@ -66,15 +67,26 @@ func sendLocalNotification(titleText:String,bodyText:String) {
     content.title = titleText
     content.body = bodyText
     content.sound = UNNotificationSound.default
-
+    
     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
+    
     UNUserNotificationCenter.current().add(request) { error in
         if let error = error {
             print("Error adding notification: \(error.localizedDescription)")
         } else {
             print("푸시 알림이 성공적으로 보내졌습니다.")
+        }
+    }
+    // Siri Intent 발행
+    // deprecated됨
+    let intent = INStartAudioCallIntent()
+    let interaction = INInteraction(intent: intent, response: nil)
+    interaction.donate { (error) in
+        if let error = error {
+            print("Error donating interaction: \(error.localizedDescription)")
+        } else {
+            print("Siri Intent 발행 성공")
         }
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import Intents
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -53,3 +54,11 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         completionHandler()
     }
 }
+
+class IntentHandler: INExtension, INStartCallIntentHandling {
+    func handle(intent: INStartCallIntent, completion: @escaping (INStartCallIntentResponse) -> Void) {
+        let response = INStartCallIntentResponse(code: .continueInApp, userActivity: nil)
+        completion(response)
+    }
+}
+

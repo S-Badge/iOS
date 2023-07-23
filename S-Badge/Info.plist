@@ -4,5 +4,20 @@
 <dict>
 	<key>UIBackgroundModes</key>
 	<array/>
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <key>IntentsSupported</key>
+            <array>
+                <string>INStartAudioCallIntent</string>
+            </array>
+        </dict>
+        <key>NSExtensionMainStoryboard</key>
+        <string>MainInterface</string> <!-- MainInterface는 Siri Extension의 Main Interface Storyboard 파일 이름 -->
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.intents-service</string>
+    </dict>
+
 </dict>
 </plist>

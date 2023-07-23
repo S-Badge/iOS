@@ -16,6 +16,11 @@
 		212A28B82A6D760D0018F8F4 /* S_BadgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28B72A6D760D0018F8F4 /* S_BadgeUITestsLaunchTests.swift */; };
 		212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */; };
 		212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28C62A6DDB370018F8F4 /* AppDelegate.swift */; };
+		212A28D02A6DEC960018F8F4 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A28CF2A6DEC960018F8F4 /* UserNotifications.framework */; };
+		212A28D22A6DEC960018F8F4 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A28D12A6DEC960018F8F4 /* UserNotificationsUI.framework */; };
+		212A28D52A6DEC960018F8F4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */; };
+		212A28D82A6DEC960018F8F4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A28D62A6DEC960018F8F4 /* MainInterface.storyboard */; };
+		212A28DC2A6DEC960018F8F4 /* SBadgeNoti.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +38,28 @@
 			remoteGlobalIDString = 212A28962A6D760C0018F8F4;
 			remoteInfo = "S-Badge";
 		};
+		212A28DA2A6DEC960018F8F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212A288F2A6D760C0018F8F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212A28CC2A6DEC960018F8F4;
+			remoteInfo = SBadgeNoti;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		212A28E02A6DEC960018F8F4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				212A28DC2A6DEC960018F8F4 /* SBadgeNoti.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		212A28972A6D760C0018F8F4 /* S-Badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +75,12 @@
 		212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		212A28C62A6DDB370018F8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		212A28C82A6DDF470018F8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SBadgeNoti.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A28CF2A6DEC960018F8F4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		212A28D12A6DEC960018F8F4 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		212A28D72A6DEC960018F8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		212A28D92A6DEC960018F8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +105,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		212A28CA2A6DEC960018F8F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A28D22A6DEC960018F8F4 /* UserNotificationsUI.framework in Frameworks */,
+				212A28D02A6DEC960018F8F4 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +123,8 @@
 				212A28992A6D760C0018F8F4 /* S-Badge */,
 				212A28AA2A6D760D0018F8F4 /* S-BadgeTests */,
 				212A28B42A6D760D0018F8F4 /* S-BadgeUITests */,
+				212A28D32A6DEC960018F8F4 /* SBadgeNoti */,
+				212A28CE2A6DEC960018F8F4 /* Frameworks */,
 				212A28982A6D760C0018F8F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +135,7 @@
 				212A28972A6D760C0018F8F4 /* S-Badge.app */,
 				212A28A72A6D760D0018F8F4 /* S-BadgeTests.xctest */,
 				212A28B12A6D760D0018F8F4 /* S-BadgeUITests.xctest */,
+				212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +179,25 @@
 			path = "S-BadgeUITests";
 			sourceTree = "<group>";
 		};
+		212A28CE2A6DEC960018F8F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				212A28CF2A6DEC960018F8F4 /* UserNotifications.framework */,
+				212A28D12A6DEC960018F8F4 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		212A28D32A6DEC960018F8F4 /* SBadgeNoti */ = {
+			isa = PBXGroup;
+			children = (
+				212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */,
+				212A28D62A6DEC960018F8F4 /* MainInterface.storyboard */,
+				212A28D92A6DEC960018F8F4 /* Info.plist */,
+			);
+			path = SBadgeNoti;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,10 +208,12 @@
 				212A28932A6D760C0018F8F4 /* Sources */,
 				212A28942A6D760C0018F8F4 /* Frameworks */,
 				212A28952A6D760C0018F8F4 /* Resources */,
+				212A28E02A6DEC960018F8F4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				212A28DB2A6DEC960018F8F4 /* PBXTargetDependency */,
 			);
 			name = "S-Badge";
 			productName = "S-Badge";
@@ -191,6 +256,23 @@
 			productReference = 212A28B12A6D760D0018F8F4 /* S-BadgeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		212A28CC2A6DEC960018F8F4 /* SBadgeNoti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212A28DD2A6DEC960018F8F4 /* Build configuration list for PBXNativeTarget "SBadgeNoti" */;
+			buildPhases = (
+				212A28C92A6DEC960018F8F4 /* Sources */,
+				212A28CA2A6DEC960018F8F4 /* Frameworks */,
+				212A28CB2A6DEC960018F8F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBadgeNoti;
+			productName = SBadgeNoti;
+			productReference = 212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +294,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 212A28962A6D760C0018F8F4;
 					};
+					212A28CC2A6DEC960018F8F4 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 212A28922A6D760C0018F8F4 /* Build configuration list for PBXProject "S-Badge" */;
@@ -230,6 +315,7 @@
 				212A28962A6D760C0018F8F4 /* S-Badge */,
 				212A28A62A6D760D0018F8F4 /* S-BadgeTests */,
 				212A28B02A6D760D0018F8F4 /* S-BadgeUITests */,
+				212A28CC2A6DEC960018F8F4 /* SBadgeNoti */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A28CB2A6DEC960018F8F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A28D82A6DEC960018F8F4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +383,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		212A28C92A6DEC960018F8F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A28D52A6DEC960018F8F4 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,7 +404,23 @@
 			target = 212A28962A6D760C0018F8F4 /* S-Badge */;
 			targetProxy = 212A28B22A6D760D0018F8F4 /* PBXContainerItemProxy */;
 		};
+		212A28DB2A6DEC960018F8F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212A28CC2A6DEC960018F8F4 /* SBadgeNoti */;
+			targetProxy = 212A28DA2A6DEC960018F8F4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		212A28D62A6DEC960018F8F4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212A28D72A6DEC960018F8F4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		212A28B92A6D760D0018F8F4 /* Debug */ = {
@@ -422,6 +540,7 @@
 		212A28BC2A6D760D0018F8F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +571,7 @@
 		212A28BD2A6D760D0018F8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +675,56 @@
 			};
 			name = Release;
 		};
+		212A28DE2A6DEC960018F8F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5WP2FDW4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SBadgeNoti/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SBadgeNoti;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solitary.SBadge.SBadgeNoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		212A28DF2A6DEC960018F8F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5WP2FDW4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SBadgeNoti/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SBadgeNoti;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solitary.SBadge.SBadgeNoti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,6 +760,15 @@
 			buildConfigurations = (
 				212A28C22A6D760D0018F8F4 /* Debug */,
 				212A28C32A6D760D0018F8F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212A28DD2A6DEC960018F8F4 /* Build configuration list for PBXNativeTarget "SBadgeNoti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212A28DE2A6DEC960018F8F4 /* Debug */,
+				212A28DF2A6DEC960018F8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

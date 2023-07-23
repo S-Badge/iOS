@@ -1,9 +1,3 @@
-//
-//  BluetoothManager.swift
-//  S-Badge
-//
-//  Created by ram on 2023/07/24.
-//
 import Foundation
 import CoreBluetooth
 import UserNotifications

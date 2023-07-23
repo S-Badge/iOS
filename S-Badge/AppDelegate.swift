@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  S-Badge
-//
-//  Created by ram on 2023/07/24.
-//
-
 import UIKit
 import UserNotifications
 import Intents

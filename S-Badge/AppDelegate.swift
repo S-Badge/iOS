@@ -42,7 +42,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        // Handle the action when the user taps on the notification banner
+        // 푸시알람 배너를 클릭했을 때 액션
         print("App opened via tapping the notification.")
         completionHandler()
     }

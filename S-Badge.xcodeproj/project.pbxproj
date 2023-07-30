@@ -160,7 +160,6 @@
 				F6042C8B1F5CAA68603F311C /* Pods-SBadgeNoti.debug.xcconfig */,
 				07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

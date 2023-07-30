@@ -19,7 +19,7 @@ struct MainView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             // 첫 번째 탭: 지도
-            DirectionMapView()
+            MapMarkerView()
                 .tabItem {
                     Label("지도", systemImage: "map")
                 }

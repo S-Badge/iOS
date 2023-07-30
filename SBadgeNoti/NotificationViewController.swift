@@ -18,7 +18,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         
         // AVSpeechUtterance를 사용하여 텍스트를 음성으로 변환하도록 설정
 //        let utterance = AVSpeechUtterance(string: text)
-        let utterance = AVSpeechUtterance(string: "Hello")
+        let utterance = AVSpeechUtterance(string: "안녕하세요")
         utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         
         // AVSpeechSynthesizer를 사용하여 음성 출력

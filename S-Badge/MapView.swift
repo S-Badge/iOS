@@ -4,10 +4,10 @@
 //
 //  Created by ram on 2023/07/29.
 //
-
+import Foundation
 import SwiftUI
 import UserNotifications
-import AVFoundation
+import Speech
 
 struct PushTestView: View {
     var body: some View {
@@ -23,50 +23,41 @@ struct PushTestView: View {
             }
             .padding()
         }
-        .onAppear {
-            UNUserNotificationCenter.current().delegate = NotificationDelegate()
-        }
-    }
-}
-
-// Function to send local notification
-func sendLocalNotification(titleText: String, bodyText: String) {
-    let center = UNUserNotificationCenter.current()
-
-    let content = UNMutableNotificationContent()
-    content.title = titleText
-    content.body = bodyText
-    content.sound = .default
-
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-    center.add(request) { error in
-        if let error = error {
-            print("Error sending notification: \(error.localizedDescription)")
-        } else {
-            print("Notification sent successfully.")
-        }
-    }
-}
-
-// Notification Delegate to handle notifications when app is in background or foreground
-class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        // When notification is received, wait for 5 seconds and then read the notification content
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.readNotificationContent(response.notification)
-        }
-        completionHandler()
     }
 
-    private func readNotificationContent(_ notification: UNNotification) {
-        let content = notification.request.content
+    func sendLocalNotification(titleText: String, bodyText: String) {
+        let content = UNMutableNotificationContent()
+        content.title = titleText
+        content.body = bodyText
+        content.sound = .default
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "LocalNotification", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error sending local notification: \(error)")
+            } else {
+                print("Local notification sent successfully.")
+            }
+        }
+    }
+
+    // iOS 15 이상에서만 지원되는 음성 합성 메서드
+    func speak(text: String) {
         let synthesizer = AVSpeechSynthesizer()
-
-        let utterance = AVSpeechUtterance(string: content.body)
-        utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR") // Change to your preferred language
-
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "ko-KR")
         synthesizer.speak(utterance)
+    }
+
+    // 푸시 알림 수신 시 호출되는 메서드
+    func handleNotification(_ notification: UNNotification) {
+        if #available(iOS 15.0, *) {
+            let body = notification.request.content.body
+            speak(text: body)
+        } else {
+            print("음성 합성은 iOS 15 이상에서만 지원됩니다.")
+        }
     }
 }

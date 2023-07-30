@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */; };
-		212A289D2A6D760C0018F8F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A289C2A6D760C0018F8F4 /* ContentView.swift */; };
 		212A289F2A6D760D0018F8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A289E2A6D760D0018F8F4 /* Assets.xcassets */; };
 		212A28A22A6D760D0018F8F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A28A12A6D760D0018F8F4 /* Preview Assets.xcassets */; };
 		212A28AC2A6D760D0018F8F4 /* S_BadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28AB2A6D760D0018F8F4 /* S_BadgeTests.swift */; };
@@ -21,6 +20,9 @@
 		212A28D52A6DEC960018F8F4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */; };
 		212A28D82A6DEC960018F8F4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A28D62A6DEC960018F8F4 /* MainInterface.storyboard */; };
 		212A28DC2A6DEC960018F8F4 /* SBadgeNoti.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB192A7516DE0010F5E9 /* MapView.swift */; };
+		2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */; };
+		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,6 @@
 /* Begin PBXFileReference section */
 		212A28972A6D760C0018F8F4 /* S-Badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_BadgeApp.swift; sourceTree = "<group>"; };
-		212A289C2A6D760C0018F8F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		212A289E2A6D760D0018F8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212A28A12A6D760D0018F8F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		212A28A72A6D760D0018F8F4 /* S-BadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "S-BadgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,9 @@
 		212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		212A28D72A6DEC960018F8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		212A28D92A6DEC960018F8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2153FB192A7516DE0010F5E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionMapView.swift; sourceTree = "<group>"; };
+		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,11 +149,13 @@
 			children = (
 				212A28C82A6DDF470018F8F4 /* Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
-				212A289C2A6D760C0018F8F4 /* ContentView.swift */,
 				212A289E2A6D760D0018F8F4 /* Assets.xcassets */,
 				212A28A02A6D760D0018F8F4 /* Preview Content */,
 				212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */,
 				212A28C62A6DDB370018F8F4 /* AppDelegate.swift */,
+				217017A42A73E3C8003E26EE /* MainView.swift */,
+				2153FB192A7516DE0010F5E9 /* MapView.swift */,
+				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
 			);
 			path = "S-Badge";
 			sourceTree = "<group>";
@@ -360,9 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */,
-				212A289D2A6D760C0018F8F4 /* ContentView.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
+				2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */,
+				217017A52A73E3C8003E26EE /* MainView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
+				2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

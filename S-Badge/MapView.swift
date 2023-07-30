@@ -1,13 +1,14 @@
 //
-//  ContentView.swift
+//  MapView.swift
 //  S-Badge
 //
-//  Created by ram on 2023/07/23.
+//  Created by ram on 2023/07/29.
 //
 
+import Foundation
 import SwiftUI
 
-struct ContentView: View {
+struct PushTestView: View {
     var body: some View {
         VStack {
             Button(action: {
@@ -24,10 +25,4 @@ struct ContentView: View {
         }
     }
 
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }

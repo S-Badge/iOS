@@ -11,8 +11,33 @@
 		</dict>
 		<key>SBadgeNoti.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>212A28962A6D760C0018F8F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>212A28A62A6D760D0018F8F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>212A28B02A6D760D0018F8F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>212A28CC2A6DEC960018F8F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

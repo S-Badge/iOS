@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import UserNotifications
 
 struct SettingsView: View {
     var body: some View {
@@ -15,19 +14,14 @@ struct SettingsView: View {
             Text("이어폰으로 알림 읽어주기 기능을 활성화해주세요.")
                 .padding()
             
-            Button("알림 권한 요청", action: requestNotificationPermission)
+            Button("앱 설정으로 이동", action: openAppSettings)
                 .padding()
         }
     }
     
-    private func requestNotificationPermission() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
-            if granted {
-                print("알림 권한이 허용되었습니다.")
-            } else {
-                print("알림 권한이 거부되었습니다.")
-            }
-        }
+    private func openAppSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+        UIApplication.shared.open(settingsUrl)
     }
 }
 

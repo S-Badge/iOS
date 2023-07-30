@@ -45,9 +45,3 @@ struct MainView: View {
 
 
 
-// 설정 뷰 예시
-struct SettingsView: View {
-    var body: some View {
-        Text("설정 뷰")
-    }
-}

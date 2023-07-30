@@ -22,6 +22,7 @@
 		212A28DC2A6DEC960018F8F4 /* SBadgeNoti.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB192A7516DE0010F5E9 /* MapView.swift */; };
 		2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */; };
+		2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1D2A7688460010F5E9 /* SettingsView.swift */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		212A28D92A6DEC960018F8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2153FB192A7516DE0010F5E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionMapView.swift; sourceTree = "<group>"; };
+		2153FB1D2A7688460010F5E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				217017A42A73E3C8003E26EE /* MainView.swift */,
 				2153FB192A7516DE0010F5E9 /* MapView.swift */,
 				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
+				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
 			);
 			path = "S-Badge";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */,
 				212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
 				2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */,

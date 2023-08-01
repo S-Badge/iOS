@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1889E09695CA9A6AE408DABB /* Pods_SBadgeNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089375A42992ED18069C4AF /* Pods_SBadgeNoti.framework */; };
+		211216962A797BEF00FA58A8 /* NaverMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216952A797BEF00FA58A8 /* NaverMapScene.swift */; };
+		211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* FirstMapView.swift */; };
+		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
+		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
+		211216A12A79847A00FA58A8 /* NaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216A02A79847A00FA58A8 /* NaverView.swift */; };
 		212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */; };
 		212A289F2A6D760D0018F8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A289E2A6D760D0018F8F4 /* Assets.xcassets */; };
 		212A28A22A6D760D0018F8F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A28A12A6D760D0018F8F4 /* Preview Assets.xcassets */; };
@@ -73,6 +78,11 @@
 /* Begin PBXFileReference section */
 		07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBadgeNoti.release.xcconfig"; path = "Target Support Files/Pods-SBadgeNoti/Pods-SBadgeNoti.release.xcconfig"; sourceTree = "<group>"; };
 		13FF132B01C7EEC86879664E /* Pods-S-BadgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.debug.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		211216952A797BEF00FA58A8 /* NaverMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapScene.swift; sourceTree = "<group>"; };
+		211216972A7980B800FA58A8 /* FirstMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMapView.swift; sourceTree = "<group>"; };
+		211216992A7982CB00FA58A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2112169C2A79841D00FA58A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		211216A02A79847A00FA58A8 /* NaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverView.swift; sourceTree = "<group>"; };
 		212A28972A6D760C0018F8F4 /* S-Badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_BadgeApp.swift; sourceTree = "<group>"; };
 		212A289E2A6D760D0018F8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,9 +173,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		2112169B2A79833500FA58A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2112169C2A79841D00FA58A8 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		212A288E2A6D760C0018F8F4 = {
 			isa = PBXGroup;
 			children = (
+				2112169B2A79833500FA58A8 /* Model */,
+				211216992A7982CB00FA58A8 /* LocationManager.swift */,
 				212A28992A6D760C0018F8F4 /* S-Badge */,
 				212A28AA2A6D760D0018F8F4 /* S-BadgeTests */,
 				212A28B42A6D760D0018F8F4 /* S-BadgeUITests */,
@@ -201,6 +221,9 @@
 				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
 				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
 				2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */,
+				211216952A797BEF00FA58A8 /* NaverMapScene.swift */,
+				211216972A7980B800FA58A8 /* FirstMapView.swift */,
+				211216A02A79847A00FA58A8 /* NaverView.swift */,
 			);
 			path = "S-Badge";
 			sourceTree = "<group>";
@@ -549,10 +572,15 @@
 				2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */,
 				2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */,
 				212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */,
+				2112169D2A79841D00FA58A8 /* Model.swift in Sources */,
+				2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
 				2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */,
 				217017A52A73E3C8003E26EE /* MainView.swift in Sources */,
+				211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */,
+				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
+				211216962A797BEF00FA58A8 /* NaverMapScene.swift in Sources */,
 				2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -742,7 +770,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "S-Badge/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 서비스를 위해 사용자 현위치를 제공받습니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현위치 제공을 위해 동의해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -775,7 +803,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "S-Badge/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 서비스를 위해 사용자 현위치를 제공받습니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현위치 제공을 위해 동의해주세요";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

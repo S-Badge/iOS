@@ -15,6 +15,8 @@ struct FirstMapView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> NMFNaverMapView {
         let mapView = NMFNaverMapView()
+        mapView.showLocationButton = true
+        mapView.positionMode = .direction
         DispatchQueue.main.async {
             if let userLocation = locationManager.userLocation {
                 let nmg = NMGLatLng(lat: userLocation.lat, lng: userLocation.lng)
@@ -24,7 +26,8 @@ struct FirstMapView: UIViewRepresentable {
                 marketMarker.iconImage = NMF_MARKER_IMAGE_BLACK
                 marketMarker.iconTintColor = UIColor.red
                 marketMarker.position = nmg
-        
+                marketMarker.width = 25
+                marketMarker.height = 40
                 marketMarker.mapView = mapView.mapView
                 marketMarker.mapView?.moveCamera(cameraUpdate)
                 

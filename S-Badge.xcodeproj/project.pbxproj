@@ -13,6 +13,9 @@
 		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
 		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
 		211216A12A79847A00FA58A8 /* NaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216A02A79847A00FA58A8 /* NaverView.swift */; };
+		211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216AA2A7E888A00FA58A8 /* CoreMotion.framework */; };
+		211216AD2A7E889300FA58A8 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216AC2A7E889300FA58A8 /* OrientationManager.swift */; };
+		211216AF2A7E88CF00FA58A8 /* MapViewWithHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */; };
 		212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */; };
 		212A289F2A6D760D0018F8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A289E2A6D760D0018F8F4 /* Assets.xcassets */; };
 		212A28A22A6D760D0018F8F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A28A12A6D760D0018F8F4 /* Preview Assets.xcassets */; };
@@ -83,6 +86,9 @@
 		211216992A7982CB00FA58A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2112169C2A79841D00FA58A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		211216A02A79847A00FA58A8 /* NaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverView.swift; sourceTree = "<group>"; };
+		211216AA2A7E888A00FA58A8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		211216AC2A7E889300FA58A8 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
+		211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewWithHeading.swift; sourceTree = "<group>"; };
 		212A28972A6D760C0018F8F4 /* S-Badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_BadgeApp.swift; sourceTree = "<group>"; };
 		212A289E2A6D760D0018F8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */,
+				211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */,
 				499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				2112169B2A79833500FA58A8 /* Model */,
-				211216992A7982CB00FA58A8 /* LocationManager.swift */,
 				212A28992A6D760C0018F8F4 /* S-Badge */,
 				212A28AA2A6D760D0018F8F4 /* S-BadgeTests */,
 				212A28B42A6D760D0018F8F4 /* S-BadgeUITests */,
@@ -210,6 +216,7 @@
 		212A28992A6D760C0018F8F4 /* S-Badge */ = {
 			isa = PBXGroup;
 			children = (
+				211216992A7982CB00FA58A8 /* LocationManager.swift */,
 				212A28C82A6DDF470018F8F4 /* Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
 				212A289E2A6D760D0018F8F4 /* Assets.xcassets */,
@@ -224,6 +231,8 @@
 				211216952A797BEF00FA58A8 /* NaverMapScene.swift */,
 				211216972A7980B800FA58A8 /* FirstMapView.swift */,
 				211216A02A79847A00FA58A8 /* NaverView.swift */,
+				211216AC2A7E889300FA58A8 /* OrientationManager.swift */,
+				211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */,
 			);
 			path = "S-Badge";
 			sourceTree = "<group>";
@@ -256,6 +265,7 @@
 		212A28CE2A6DEC960018F8F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				211216AA2A7E888A00FA58A8 /* CoreMotion.framework */,
 				2153FB212A76D3C10010F5E9 /* CoreLocation.framework */,
 				212A28CF2A6DEC960018F8F4 /* UserNotifications.framework */,
 				212A28D12A6DEC960018F8F4 /* UserNotificationsUI.framework */,
@@ -571,11 +581,13 @@
 			files = (
 				2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */,
 				2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */,
+				211216AD2A7E889300FA58A8 /* OrientationManager.swift in Sources */,
 				212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */,
 				2112169D2A79841D00FA58A8 /* Model.swift in Sources */,
 				2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
 				2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */,
+				211216AF2A7E88CF00FA58A8 /* MapViewWithHeading.swift in Sources */,
 				217017A52A73E3C8003E26EE /* MainView.swift in Sources */,
 				211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */,
 				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,

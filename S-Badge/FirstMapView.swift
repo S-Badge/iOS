@@ -1,10 +1,3 @@
-//
-//  FirstMapView.swift
-//  S-Badge
-//
-//  Created by ram on 2023/08/02.
-//
-
 import Foundation
 import SwiftUI
 import NMapsMap
@@ -17,6 +10,7 @@ struct FirstMapView: UIViewRepresentable {
         let mapView = NMFNaverMapView()
         mapView.showLocationButton = true
         mapView.positionMode = .direction
+        
         DispatchQueue.main.async {
             if let userLocation = locationManager.userLocation {
                 let nmg = NMGLatLng(lat: userLocation.lat, lng: userLocation.lng)
@@ -30,12 +24,8 @@ struct FirstMapView: UIViewRepresentable {
                 marketMarker.height = 40
                 marketMarker.mapView = mapView.mapView
                 marketMarker.mapView?.moveCamera(cameraUpdate)
-                
             }
-        
         }
-    
-        
         return mapView
     }
     

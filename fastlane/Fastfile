@@ -13,13 +13,13 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:ios)
+default_platform(:ios) # 기본 플랫폼을 iOS로 설정
 
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     increment_build_number(xcodeproj: "S-Badge.xcodeproj")
-    build_app(workspace: "S-Badge.xcworkspace", scheme: "S-Badge")
+    build_app(workspace: "S-Badge.xcworkspace", scheme: "SBadge")
     upload_to_testflight
   end
 end

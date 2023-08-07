@@ -15,3 +15,5 @@ public struct CoordinateInfo{
     }
     
 }
+//let NTower = NMGLatLng(lat: 37.5512164, lng: 126.9882487)
+//var cameraUpdate = NMFCameraUpdate(scrollTo: NTower, zoomTo: 2)

@@ -186,18 +186,42 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		212A288E2A6D760C0018F8F4 = {
+		211216B22A817D5100FA58A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				212A28C62A6DDB370018F8F4 /* AppDelegate.swift */,
+				212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */,
+				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
+				211216972A7980B800FA58A8 /* FirstMapView.swift */,
+				217017A42A73E3C8003E26EE /* MainView.swift */,
+				2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */,
+				211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */,
+				211216A02A79847A00FA58A8 /* NaverView.swift */,
+				211216AC2A7E889300FA58A8 /* OrientationManager.swift */,
+				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		211216B32A817D5800FA58A8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				211216B02A8174F500FA58A8 /* PushTestView.swift */,
-				2112169B2A79833500FA58A8 /* Model */,
+				211216992A7982CB00FA58A8 /* LocationManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		212A288E2A6D760C0018F8F4 = {
+			isa = PBXGroup;
+			children = (
+				212A28CE2A6DEC960018F8F4 /* Frameworks */,
+				139C0E832BC7FA432AF0878E /* Pods */,
+				212A28982A6D760C0018F8F4 /* Products */,
 				212A28992A6D760C0018F8F4 /* S-Badge */,
 				212A28AA2A6D760D0018F8F4 /* S-BadgeTests */,
 				212A28B42A6D760D0018F8F4 /* S-BadgeUITests */,
 				212A28D32A6DEC960018F8F4 /* SBadgeNoti */,
-				212A28CE2A6DEC960018F8F4 /* Frameworks */,
-				212A28982A6D760C0018F8F4 /* Products */,
-				139C0E832BC7FA432AF0878E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,21 +239,13 @@
 		212A28992A6D760C0018F8F4 /* S-Badge */ = {
 			isa = PBXGroup;
 			children = (
-				211216992A7982CB00FA58A8 /* LocationManager.swift */,
-				212A28C82A6DDF470018F8F4 /* Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
+				212A28C82A6DDF470018F8F4 /* Info.plist */,
 				212A289E2A6D760D0018F8F4 /* Assets.xcassets */,
+				211216B22A817D5100FA58A8 /* View */,
+				211216B32A817D5800FA58A8 /* ViewModel */,
+				2112169B2A79833500FA58A8 /* Model */,
 				212A28A02A6D760D0018F8F4 /* Preview Content */,
-				212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */,
-				212A28C62A6DDB370018F8F4 /* AppDelegate.swift */,
-				217017A42A73E3C8003E26EE /* MainView.swift */,
-				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
-				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
-				2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */,
-				211216972A7980B800FA58A8 /* FirstMapView.swift */,
-				211216A02A79847A00FA58A8 /* NaverView.swift */,
-				211216AC2A7E889300FA58A8 /* OrientationManager.swift */,
-				211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */,
 			);
 			path = "S-Badge";
 			sourceTree = "<group>";

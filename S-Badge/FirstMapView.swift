@@ -9,7 +9,7 @@ struct FirstMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> NMFNaverMapView {
         let mapView = NMFNaverMapView()
         mapView.showLocationButton = true
-        mapView.positionMode = .direction
+//        mapView.positionMode = .direction
         
         DispatchQueue.main.async {
             if let userLocation = locationManager.userLocation {

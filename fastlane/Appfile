@@ -1,0 +1,8 @@
+app_identifier("com.SBadge.FrontEnd") # The bundle identifier of your app
+apple_id("pyoram25@naver.com") # Your Apple Developer Portal username
+
+itc_team_id("126447001") # App Store Connect Team ID
+team_id("F5WP2FDW4U") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

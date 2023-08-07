@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1889E09695CA9A6AE408DABB /* Pods_SBadgeNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089375A42992ED18069C4AF /* Pods_SBadgeNoti.framework */; };
-		211216962A797BEF00FA58A8 /* NaverMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216952A797BEF00FA58A8 /* NaverMapScene.swift */; };
 		211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* FirstMapView.swift */; };
 		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
 		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
@@ -16,6 +15,7 @@
 		211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216AA2A7E888A00FA58A8 /* CoreMotion.framework */; };
 		211216AD2A7E889300FA58A8 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216AC2A7E889300FA58A8 /* OrientationManager.swift */; };
 		211216AF2A7E88CF00FA58A8 /* MapViewWithHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */; };
+		211216B12A8174F500FA58A8 /* PushTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216B02A8174F500FA58A8 /* PushTestView.swift */; };
 		212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */; };
 		212A289F2A6D760D0018F8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A289E2A6D760D0018F8F4 /* Assets.xcassets */; };
 		212A28A22A6D760D0018F8F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A28A12A6D760D0018F8F4 /* Preview Assets.xcassets */; };
@@ -29,7 +29,6 @@
 		212A28D52A6DEC960018F8F4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */; };
 		212A28D82A6DEC960018F8F4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A28D62A6DEC960018F8F4 /* MainInterface.storyboard */; };
 		212A28DC2A6DEC960018F8F4 /* SBadgeNoti.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 212A28CD2A6DEC960018F8F4 /* SBadgeNoti.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB192A7516DE0010F5E9 /* MapView.swift */; };
 		2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */; };
 		2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1D2A7688460010F5E9 /* SettingsView.swift */; };
 		2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */; };
@@ -81,7 +80,6 @@
 /* Begin PBXFileReference section */
 		07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBadgeNoti.release.xcconfig"; path = "Target Support Files/Pods-SBadgeNoti/Pods-SBadgeNoti.release.xcconfig"; sourceTree = "<group>"; };
 		13FF132B01C7EEC86879664E /* Pods-S-BadgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.debug.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		211216952A797BEF00FA58A8 /* NaverMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapScene.swift; sourceTree = "<group>"; };
 		211216972A7980B800FA58A8 /* FirstMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMapView.swift; sourceTree = "<group>"; };
 		211216992A7982CB00FA58A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2112169C2A79841D00FA58A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -89,6 +87,7 @@
 		211216AA2A7E888A00FA58A8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		211216AC2A7E889300FA58A8 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewWithHeading.swift; sourceTree = "<group>"; };
+		211216B02A8174F500FA58A8 /* PushTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTestView.swift; sourceTree = "<group>"; };
 		212A28972A6D760C0018F8F4 /* S-Badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S-Badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S_BadgeApp.swift; sourceTree = "<group>"; };
 		212A289E2A6D760D0018F8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 		212A28D42A6DEC960018F8F4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		212A28D72A6DEC960018F8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		212A28D92A6DEC960018F8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2153FB192A7516DE0010F5E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionMapView.swift; sourceTree = "<group>"; };
 		2153FB1D2A7688460010F5E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerView.swift; sourceTree = "<group>"; };
@@ -191,6 +189,7 @@
 		212A288E2A6D760C0018F8F4 = {
 			isa = PBXGroup;
 			children = (
+				211216B02A8174F500FA58A8 /* PushTestView.swift */,
 				2112169B2A79833500FA58A8 /* Model */,
 				212A28992A6D760C0018F8F4 /* S-Badge */,
 				212A28AA2A6D760D0018F8F4 /* S-BadgeTests */,
@@ -224,11 +223,9 @@
 				212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */,
 				212A28C62A6DDB370018F8F4 /* AppDelegate.swift */,
 				217017A42A73E3C8003E26EE /* MainView.swift */,
-				2153FB192A7516DE0010F5E9 /* MapView.swift */,
 				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
 				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
 				2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */,
-				211216952A797BEF00FA58A8 /* NaverMapScene.swift */,
 				211216972A7980B800FA58A8 /* FirstMapView.swift */,
 				211216A02A79847A00FA58A8 /* NaverView.swift */,
 				211216AC2A7E889300FA58A8 /* OrientationManager.swift */,
@@ -586,14 +583,13 @@
 				2112169D2A79841D00FA58A8 /* Model.swift in Sources */,
 				2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
-				2153FB1A2A7516DE0010F5E9 /* MapView.swift in Sources */,
 				211216AF2A7E88CF00FA58A8 /* MapViewWithHeading.swift in Sources */,
 				217017A52A73E3C8003E26EE /* MainView.swift in Sources */,
 				211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */,
 				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
-				211216962A797BEF00FA58A8 /* NaverMapScene.swift in Sources */,
 				2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */,
+				211216B12A8174F500FA58A8 /* PushTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,14 +771,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "S-Badge/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현위치 제공을 위해 동의해주세요";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "허가";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -792,7 +790,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SBadge.FrontEnd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -808,14 +806,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "S-Badge/Info.plist";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현위치 제공을 위해 동의해주세요";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "허가";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -825,7 +825,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SBadge.FrontEnd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -841,7 +841,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -862,7 +862,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -882,7 +882,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -901,7 +901,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -919,7 +919,7 @@
 			baseConfigurationReference = F6042C8B1F5CAA68603F311C /* Pods-SBadgeNoti.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBadgeNoti/Info.plist;
@@ -945,7 +945,7 @@
 			baseConfigurationReference = 07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBadgeNoti/Info.plist;

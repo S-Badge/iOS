@@ -1,8 +1,8 @@
 //
-//  MapView.swift
+//  PushTestView.swift
 //  S-Badge
 //
-//  Created by ram on 2023/07/29.
+//  Created by ram on 2023/08/08.
 //
 
 import Foundation

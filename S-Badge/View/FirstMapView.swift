@@ -10,6 +10,8 @@ struct FirstMapView: UIViewRepresentable {
         let mapView = NMFNaverMapView()
         mapView.showLocationButton = true
 //        mapView.positionMode = .direction
+        let NTower = NMGLatLng(lat: 37.5512164, lng: 126.9882487)
+        
         
         DispatchQueue.main.async {
             if let userLocation = locationManager.userLocation {

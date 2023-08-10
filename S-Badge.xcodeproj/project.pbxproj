@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1889E09695CA9A6AE408DABB /* Pods_SBadgeNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089375A42992ED18069C4AF /* Pods_SBadgeNoti.framework */; };
 		210A50D32A84AC98008AA69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
-		210A50D92A84AD5C008AA69A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 210A50D82A84AD5C008AA69A /* FirebaseAnalytics */; };
+		210A50DB2A84C082008AA69A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 210A50DA2A84C082008AA69A /* FirebaseMessaging */; };
 		211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* FirstMapView.swift */; };
 		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
 		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
@@ -131,9 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				210A50DB2A84C082008AA69A /* FirebaseMessaging in Frameworks */,
 				2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */,
 				211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */,
-				210A50D92A84AD5C008AA69A /* FirebaseAnalytics in Frameworks */,
 				499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +326,7 @@
 			);
 			name = "S-Badge";
 			packageProductDependencies = (
-				210A50D82A84AD5C008AA69A /* FirebaseAnalytics */,
+				210A50DA2A84C082008AA69A /* FirebaseMessaging */,
 			);
 			productName = "S-Badge";
 			productReference = 212A28972A6D760C0018F8F4 /* S-Badge.app */;
@@ -1058,10 +1058,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		210A50D82A84AD5C008AA69A /* FirebaseAnalytics */ = {
+		210A50DA2A84C082008AA69A /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

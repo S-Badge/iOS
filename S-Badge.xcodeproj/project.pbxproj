@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1889E09695CA9A6AE408DABB /* Pods_SBadgeNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089375A42992ED18069C4AF /* Pods_SBadgeNoti.framework */; };
+		210A50D32A84AC98008AA69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
+		210A50D92A84AD5C008AA69A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 210A50D82A84AD5C008AA69A /* FirebaseAnalytics */; };
 		211216982A7980B800FA58A8 /* FirstMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* FirstMapView.swift */; };
 		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
 		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
@@ -80,6 +82,7 @@
 /* Begin PBXFileReference section */
 		07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBadgeNoti.release.xcconfig"; path = "Target Support Files/Pods-SBadgeNoti/Pods-SBadgeNoti.release.xcconfig"; sourceTree = "<group>"; };
 		13FF132B01C7EEC86879664E /* Pods-S-BadgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.debug.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		210A50D22A84AC98008AA69A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Desktop/공모전/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		211216972A7980B800FA58A8 /* FirstMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMapView.swift; sourceTree = "<group>"; };
 		211216992A7982CB00FA58A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2112169C2A79841D00FA58A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 			files = (
 				2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */,
 				211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */,
+				210A50D92A84AD5C008AA69A /* FirebaseAnalytics in Frameworks */,
 				499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +243,7 @@
 		212A28992A6D760C0018F8F4 /* S-Badge */ = {
 			isa = PBXGroup;
 			children = (
+				210A50D22A84AC98008AA69A /* GoogleService-Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
 				212A28C82A6DDF470018F8F4 /* Info.plist */,
 				212A289E2A6D760D0018F8F4 /* Assets.xcassets */,
@@ -320,6 +325,9 @@
 				212A28DB2A6DEC960018F8F4 /* PBXTargetDependency */,
 			);
 			name = "S-Badge";
+			packageProductDependencies = (
+				210A50D82A84AD5C008AA69A /* FirebaseAnalytics */,
+			);
 			productName = "S-Badge";
 			productReference = 212A28972A6D760C0018F8F4 /* S-Badge.app */;
 			productType = "com.apple.product-type.application";
@@ -416,6 +424,9 @@
 				Base,
 			);
 			mainGroup = 212A288E2A6D760C0018F8F4;
+			packageReferences = (
+				210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 212A28982A6D760C0018F8F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +446,7 @@
 			files = (
 				212A28A22A6D760D0018F8F4 /* Preview Assets.xcassets in Resources */,
 				212A289F2A6D760D0018F8F4 /* Assets.xcassets in Resources */,
+				210A50D32A84AC98008AA69A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,6 +1045,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		210A50D82A84AD5C008AA69A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 212A288F2A6D760C0018F8F4 /* Project object */;
 }

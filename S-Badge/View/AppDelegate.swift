@@ -1,9 +1,11 @@
 import UIKit
 import UserNotifications
 import Intents
+import FirebaseCore
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         // 1 - UNUserNotificationCenter는 푸시 알림을 포함하여 앱의 모든 알림 관련 활동을 처리합니다.
         // self x -> background만, self o -> foreground까지
         UNUserNotificationCenter.current().delegate = self
@@ -46,6 +48,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         print("App opened via tapping the notification.")
         completionHandler()
     }
+    
 }
 
 class IntentHandler: INExtension, INStartCallIntentHandling {

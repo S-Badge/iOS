@@ -49,6 +49,7 @@
 		2164244F2A8959A2001E4494 /* CoordinateToAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164244E2A8959A2001E4494 /* CoordinateToAddressViewModel.swift */; };
 		216424512A895AD3001E4494 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424502A895AD3001E4494 /* Config.swift */; };
 		216424532A895DB3001E4494 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424522A895DB3001E4494 /* TestView.swift */; };
+		216424552A8968EB001E4494 /* MapChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424542A8968EB001E4494 /* MapChoiceView.swift */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -135,6 +136,7 @@
 		2164244E2A8959A2001E4494 /* CoordinateToAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateToAddressViewModel.swift; sourceTree = "<group>"; };
 		216424502A895AD3001E4494 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		216424522A895DB3001E4494 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		216424542A8968EB001E4494 /* MapChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChoiceView.swift; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				216424452A8946F9001E4494 /* TempView.swift */,
 				216424472A89491D001E4494 /* CommentMapView.swift */,
 				216424522A895DB3001E4494 /* TestView.swift */,
+				216424542A8968EB001E4494 /* MapChoiceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				2164244F2A8959A2001E4494 /* CoordinateToAddressViewModel.swift in Sources */,
 				211216AD2A7E889300FA58A8 /* OrientationManager.swift in Sources */,
 				212A28C72A6DDB370018F8F4 /* AppDelegate.swift in Sources */,
+				216424552A8968EB001E4494 /* MapChoiceView.swift in Sources */,
 				2112169D2A79841D00FA58A8 /* Model.swift in Sources */,
 				2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */,
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,

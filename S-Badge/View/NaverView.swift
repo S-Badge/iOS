@@ -24,7 +24,7 @@ struct NaverView: View {
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 10))
             .sheet(isPresented: $isCommentSheetPresented) {
                 // 댓글 작성 창을 띄우는 코드
-                MapCommentView(isPresented: $isCommentSheetPresented)
+                CommentMapView(isPresented: $isCommentSheetPresented)
             }
         }
     }

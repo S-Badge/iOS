@@ -12,6 +12,7 @@ import UserNotifications
 struct PushTestView: View {
     var body: some View {
         VStack {
+            Spacer()
             Button(action: {
                 sendLocalNotification(titleText: "푸시 알림 테스트", bodyText: "테스트 본문")
             }){
@@ -22,6 +23,7 @@ struct PushTestView: View {
                     .padding()
             }
             .padding()
+            Spacer()
         }
     }
 

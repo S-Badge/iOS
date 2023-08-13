@@ -11,11 +11,13 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         VStack {
+            Spacer()
             Text("이어폰으로 알림 읽어주기 기능을 활성화해주세요.")
                 .padding()
             
             Button("앱 설정으로 이동", action: openAppSettings)
                 .padding()
+            Spacer()
         }
     }
     

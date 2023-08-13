@@ -33,7 +33,7 @@ struct MainView: View {
                 .tag(Tab.community)
 
             // 세 번째 탭: 설정
-            SettingsView()
+            TempView()
                 .tabItem {
                     Label("설정", systemImage: "gear")
                 }

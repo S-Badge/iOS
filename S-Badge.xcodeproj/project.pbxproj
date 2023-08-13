@@ -44,6 +44,8 @@
 		216424442A893A5D001E4494 /* SeoulLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424432A893A5C001E4494 /* SeoulLocationModel.swift */; };
 		216424462A8946F9001E4494 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424452A8946F9001E4494 /* TempView.swift */; };
 		216424482A89491D001E4494 /* MapCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424472A89491D001E4494 /* MapCommentView.swift */; };
+		2164244A2A895712001E4494 /* KakaoAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424492A895712001E4494 /* KakaoAddressModel.swift */; };
+		2164244D2A89579E001E4494 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2164244C2A89579E001E4494 /* Alamofire */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -126,6 +128,7 @@
 		216424432A893A5C001E4494 /* SeoulLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulLocationModel.swift; sourceTree = "<group>"; };
 		216424452A8946F9001E4494 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		216424472A89491D001E4494 /* MapCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCommentView.swift; sourceTree = "<group>"; };
+		216424492A895712001E4494 /* KakaoAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAddressModel.swift; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 				210A50DB2A84C082008AA69A /* FirebaseMessaging in Frameworks */,
 				2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */,
 				211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */,
+				2164244D2A89579E001E4494 /* Alamofire in Frameworks */,
 				216424192A884EEB001E4494 /* FirebaseAnalytics in Frameworks */,
 				499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */,
 			);
@@ -201,6 +205,7 @@
 			children = (
 				2112169C2A79841D00FA58A8 /* Model.swift */,
 				216424432A893A5C001E4494 /* SeoulLocationModel.swift */,
+				216424492A895712001E4494 /* KakaoAddressModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 			packageProductDependencies = (
 				210A50DA2A84C082008AA69A /* FirebaseMessaging */,
 				216424182A884EEB001E4494 /* FirebaseAnalytics */,
+				2164244C2A89579E001E4494 /* Alamofire */,
 			);
 			productName = "S-Badge";
 			productReference = 212A28972A6D760C0018F8F4 /* S-Badge.app */;
@@ -445,6 +451,7 @@
 			mainGroup = 212A288E2A6D760C0018F8F4;
 			packageReferences = (
 				210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2164244B2A89579E001E4494 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 212A28982A6D760C0018F8F4 /* Products */;
 			projectDirPath = "";
@@ -640,6 +647,7 @@
 				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
 				2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */,
+				2164244A2A895712001E4494 /* KakaoAddressModel.swift in Sources */,
 				216424482A89491D001E4494 /* MapCommentView.swift in Sources */,
 				216424442A893A5D001E4494 /* SeoulLocationModel.swift in Sources */,
 				211216B12A8174F500FA58A8 /* PushTestView.swift in Sources */,
@@ -1081,6 +1089,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		2164244B2A89579E001E4494 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1093,6 +1109,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		2164244C2A89579E001E4494 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2164244B2A89579E001E4494 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

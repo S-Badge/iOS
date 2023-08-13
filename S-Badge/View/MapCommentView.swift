@@ -8,10 +8,12 @@ struct MapCommentView: View {
     var body: some View {
         VStack {
             TextEditor(text: $comment)
-                .frame(height: 100)
+                .frame(height: 200)
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
-                .padding()
+                .border(Color.gray.opacity(0.5), width: 1) // 얇은 실선 추가
+                .padding(20)
+
             
             Button(action: {
                 // 댓글 작성 버튼을 누를 때 처리

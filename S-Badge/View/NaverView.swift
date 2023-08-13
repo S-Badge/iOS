@@ -12,7 +12,7 @@ struct NaverView: View {
             }) {
                 Image(systemName: "bubble.left.and.bubble.right") // 동그라미 아이콘
                     .padding(20) // 버튼 내부의 패딩
-                    .background(Color.orange)
+                    .background(Color.accentColor)
                     .foregroundColor(.white)
                     .clipShape(Circle())
                     .shadow(radius: 10)

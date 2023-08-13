@@ -1,59 +1,57 @@
+import Foundation
 import UIKit
 import Firebase
 import FirebaseMessaging
+import UserNotifications
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    
-    // 앱이 켜졌을때
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        // Use Firebase library to configure APIs
         // 파이어베이스 설정
         FirebaseApp.configure()
         
-        // 원격 알림 등록
-        if #available(iOS 10.0, *) {
-            // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
-            
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(
-                options: authOptions,
-                completionHandler: { _, _ in }
-            )
-        } else {
-            let settings: UIUserNotificationSettings =
-            UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(settings)
-        }
+        // 앱 실행 시 사용자에게 알림 허용 권한을 받음
+        UNUserNotificationCenter.current().delegate = self
         
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound] // 필요한 알림 권한을 설정
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: { _, _ in }
+        )
+        
+        // UNUserNotificationCenterDelegate를 구현한 메서드를 실행시킴
         application.registerForRemoteNotifications()
         
-        // 메세징 델리겟
+        // 파이어베이스 Meesaging 설정
         Messaging.messaging().delegate = self
-        Messaging.messaging().isAutoInitEnabled = true
-
         
-        // 푸시 포그라운드 설정
-        UNUserNotificationCenter.current().delegate = self
         
         return true
     }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
     
-    // fcm 토큰이 등록 되었을 때
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    // 백그라운드에서 푸시 알림을 탭했을 때 실행
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("APNS token: \(deviceToken)")
         Messaging.messaging().apnsToken = deviceToken
     }
     
+    // Foreground(앱 켜진 상태)에서도 알림 오는 설정
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.list, .banner])
+    }
 }
-
 
 extension AppDelegate: MessagingDelegate {
     
-    //토큰 갱신 모니터링 : 토큰 정보가 언제 바뀔까?
+    // 파이어베이스 MessagingDelegate 설정
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
       print("Firebase registration token: \(String(describing: fcmToken))")
-
+        
       let dataDict: [String: String] = ["token": fcmToken ?? ""]
       NotificationCenter.default.post(
         name: Notification.Name("FCMToken"),
@@ -63,29 +61,4 @@ extension AppDelegate: MessagingDelegate {
       // TODO: If necessary send token to application server.
       // Note: This callback is fired at each app startup and whenever a new token is generated.
     }
-
-}
-extension AppDelegate : UNUserNotificationCenterDelegate {
-    
-    // 푸시메세지가 앱이 켜져 있을때 나올때
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                willPresent notification: UNNotification,
-                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
-        let userInfo = notification.request.content.userInfo
-        
-        print("willPresent: userInfo: ", userInfo)
-        
-        completionHandler([.banner, .sound, .badge])
-    }
-    
-    // 푸시메세지를 받았을 때
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                didReceive response: UNNotificationResponse,
-                                withCompletionHandler completionHandler: @escaping () -> Void) {
-        let userInfo = response.notification.request.content.userInfo
-        print("didReceive: userInfo: ", userInfo)
-        completionHandler()
-    }
-    
 }

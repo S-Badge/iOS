@@ -36,6 +36,11 @@
 		2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */; };
 		2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2153FB212A76D3C10010F5E9 /* CoreLocation.framework */; };
 		216424192A884EEB001E4494 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 216424182A884EEB001E4494 /* FirebaseAnalytics */; };
+		2164241B2A885A33001E4494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28C62A6DDB370018F8F4 /* AppDelegate.swift */; };
+		2164241C2A885A33001E4494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A28C62A6DDB370018F8F4 /* AppDelegate.swift */; };
+		216424372A886073001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
+		216424382A886073001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
+		216424392A886074001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -114,6 +119,7 @@
 		2153FB1D2A7688460010F5E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerView.swift; sourceTree = "<group>"; };
 		2153FB212A76D3C10010F5E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		216424422A88661D001E4494 /* S-BadgeDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S-BadgeDebug.entitlements"; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 		212A28992A6D760C0018F8F4 /* S-Badge */ = {
 			isa = PBXGroup;
 			children = (
+				216424422A88661D001E4494 /* S-BadgeDebug.entitlements */,
 				210A50D22A84AC98008AA69A /* GoogleService-Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
 				212A28C82A6DDF470018F8F4 /* Info.plist */,
@@ -457,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216424372A886073001E4494 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216424392A886074001E4494 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212A28D82A6DEC960018F8F4 /* MainInterface.storyboard in Resources */,
+				216424382A886073001E4494 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2164241B2A885A33001E4494 /* AppDelegate.swift in Sources */,
 				212A28AC2A6D760D0018F8F4 /* S_BadgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2164241C2A885A33001E4494 /* AppDelegate.swift in Sources */,
 				212A28B82A6D760D0018F8F4 /* S_BadgeUITestsLaunchTests.swift in Sources */,
 				212A28B62A6D760D0018F8F4 /* S_BadgeUITests.swift in Sources */,
 			);
@@ -803,8 +815,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "S-Badge/S-BadgeDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;
@@ -816,8 +829,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -840,7 +852,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;
@@ -852,8 +864,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -27,7 +27,9 @@ struct FirstMapView: UIViewRepresentable {
             }
             if let userLocation = locationManager.userLocation {
                 let nmg = NMGLatLng(lat: userLocation.lat, lng: userLocation.lng)
-                let cameraUpdate = NMFCameraUpdate(scrollTo: nmg)
+                let centerLocation = NMGLatLng(lat: CityHall.latitude, lng: CityHall.longitude)
+                let cameraUpdate = NMFCameraUpdate(scrollTo: centerLocation)
+                
                 
                 let userMarker = NMFMarker()
                 userMarker.iconImage = NMF_MARKER_IMAGE_RED // Use red marker icon

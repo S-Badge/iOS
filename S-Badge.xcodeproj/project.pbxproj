@@ -41,6 +41,7 @@
 		216424372A886073001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
 		216424382A886073001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
 		216424392A886074001E4494 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
+		216424442A893A5D001E4494 /* SeoulLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424432A893A5C001E4494 /* SeoulLocationModel.swift */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -120,6 +121,7 @@
 		2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerView.swift; sourceTree = "<group>"; };
 		2153FB212A76D3C10010F5E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		216424422A88661D001E4494 /* S-BadgeDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S-BadgeDebug.entitlements"; sourceTree = "<group>"; };
+		216424432A893A5C001E4494 /* SeoulLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulLocationModel.swift; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				2112169C2A79841D00FA58A8 /* Model.swift */,
+				216424432A893A5C001E4494 /* SeoulLocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */,
 				211216A02A79847A00FA58A8 /* NaverView.swift */,
 				211216AC2A7E889300FA58A8 /* OrientationManager.swift */,
+				211216B02A8174F500FA58A8 /* PushTestView.swift */,
 				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
 			);
 			path = View;
@@ -218,7 +222,6 @@
 		211216B32A817D5800FA58A8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				211216B02A8174F500FA58A8 /* PushTestView.swift */,
 				211216992A7982CB00FA58A8 /* LocationManager.swift */,
 			);
 			path = ViewModel;
@@ -630,6 +633,7 @@
 				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
 				2153FB1C2A75229E0010F5E9 /* DirectionMapView.swift in Sources */,
+				216424442A893A5D001E4494 /* SeoulLocationModel.swift in Sources */,
 				211216B12A8174F500FA58A8 /* PushTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

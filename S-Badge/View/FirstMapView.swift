@@ -1,38 +1,48 @@
-import Foundation
 import SwiftUI
 import NMapsMap
-
 
 struct FirstMapView: UIViewRepresentable {
     @ObservedObject var locationManager = LocationManager()
     
     func makeUIView(context: Context) -> NMFNaverMapView {
-        let mapView = NMFNaverMapView()
-        mapView.showLocationButton = true
-//        mapView.positionMode = .direction
-        let NTower = NMGLatLng(lat: 37.5512164, lng: 126.9882487)
-        
+        let NMapView = NMFNaverMapView()
+        NMapView.showZoomControls = true
+        NMapView.mapView.zoomLevel = 10
+        NMapView.showLocationButton = true
         
         DispatchQueue.main.async {
+            // Add red markers for user location
+            
+            
+            // Add blue markers for Seoul locations
+            for location in SeoulLocationModel.seoulLocations {
+                let nmg = NMGLatLng(lat: location.latitude, lng: location.longitude)
+                
+                let marker = NMFMarker()
+                marker.iconImage = NMF_MARKER_IMAGE_BLUE // Use blue marker icon
+                marker.position = nmg
+                marker.width = 25
+                marker.height = 40
+                marker.mapView = NMapView.mapView
+            }
             if let userLocation = locationManager.userLocation {
                 let nmg = NMGLatLng(lat: userLocation.lat, lng: userLocation.lng)
                 let cameraUpdate = NMFCameraUpdate(scrollTo: nmg)
-        
-                let marketMarker = NMFMarker()
-                marketMarker.iconImage = NMF_MARKER_IMAGE_BLACK
-                marketMarker.iconTintColor = UIColor.red
-                marketMarker.position = nmg
-                marketMarker.width = 25
-                marketMarker.height = 40
-                marketMarker.mapView = mapView.mapView
-                marketMarker.mapView?.moveCamera(cameraUpdate)
+                
+                let userMarker = NMFMarker()
+                userMarker.iconImage = NMF_MARKER_IMAGE_RED // Use red marker icon
+                userMarker.position = nmg
+                userMarker.width = 25
+                userMarker.height = 40
+                userMarker.mapView = NMapView.mapView
+                NMapView.mapView.moveCamera(cameraUpdate)
             }
         }
-        return mapView
+        
+        return NMapView
     }
     
     func updateUIView(_ uiView: NMFNaverMapView, context: Context) {
         // Do nothing
     }
 }
-

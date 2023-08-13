@@ -7,12 +7,12 @@ import Foundation
 
 // MARK: - KakaoAddressModel
 struct KakaoAddressModel: Codable {
-    var meta: Meta?
-    var documents: [Document]?
+    var meta: KAMeta?
+    var documents: [KADocument]?
 }
 
 // MARK: - Document
-struct Document: Codable {
+struct KADocument: Codable {
     var roadAddress: RoadAddress?
     var address: Address?
 
@@ -60,7 +60,7 @@ struct RoadAddress: Codable {
 }
 
 // MARK: - Meta
-struct Meta: Codable {
+struct KAMeta: Codable {
     var totalCount: Int?
 
     enum CodingKeys: String, CodingKey {

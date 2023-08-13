@@ -5,6 +5,7 @@
 //  Created by ram on 2023/07/28.
 //
 import SwiftUI
+import CoreLocation
 
 struct MainView: View {
     // State 변수를 사용하여 현재 선택된 탭을 추적합니다.
@@ -26,7 +27,7 @@ struct MainView: View {
                 .tag(Tab.map)
 
             // 두 번째 탭: 커뮤니티
-            PushTestView()
+            TestView(coordinate: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780))
                 .tabItem {
                     Label("커뮤니티", systemImage: "message")
                 }

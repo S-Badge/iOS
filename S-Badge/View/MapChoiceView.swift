@@ -1,5 +1,6 @@
 import SwiftUI
 import NMapsMap
+//        mapView.positionMode = .direction
 //https://codekodo.tistory.com/210
 struct MapChoiceView: UIViewRepresentable {
     @State private var centerCoordinate = NMGLatLng(lat: 37.5665, lng: 126.9780) // 기본 위치 (서울 시청)
@@ -7,7 +8,7 @@ struct MapChoiceView: UIViewRepresentable {
     func makeUIView(context: Context) -> NMFNaverMapView {
         let mapView = NMFNaverMapView(frame: .zero)
         mapView.showLocationButton = true
-        mapView.positionMode = .direction
+
         return mapView
     }
 

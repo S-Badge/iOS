@@ -50,6 +50,9 @@
 		216424512A895AD3001E4494 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424502A895AD3001E4494 /* Config.swift */; };
 		216424532A895DB3001E4494 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424522A895DB3001E4494 /* TestView.swift */; };
 		216424552A8968EB001E4494 /* MapChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424542A8968EB001E4494 /* MapChoiceView.swift */; };
+		216424572A8AC97F001E4494 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 216424562A8AC97F001E4494 /* FirebaseFirestore */; };
+		216424592A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 216424582A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community */; };
+		2164245B2A8ACB7A001E4494 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2164245A2A8ACB7A001E4494 /* FirebaseFirestoreSwift */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -156,11 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				210A50DB2A84C082008AA69A /* FirebaseMessaging in Frameworks */,
+				216424592A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				2153FB222A76D3C10010F5E9 /* CoreLocation.framework in Frameworks */,
 				211216AB2A7E888B00FA58A8 /* CoreMotion.framework in Frameworks */,
 				2164244D2A89579E001E4494 /* Alamofire in Frameworks */,
 				216424192A884EEB001E4494 /* FirebaseAnalytics in Frameworks */,
 				499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */,
+				216424572A8AC97F001E4494 /* FirebaseFirestore in Frameworks */,
+				2164245B2A8ACB7A001E4494 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +370,9 @@
 				210A50DA2A84C082008AA69A /* FirebaseMessaging */,
 				216424182A884EEB001E4494 /* FirebaseAnalytics */,
 				2164244C2A89579E001E4494 /* Alamofire */,
+				216424562A8AC97F001E4494 /* FirebaseFirestore */,
+				216424582A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community */,
+				2164245A2A8ACB7A001E4494 /* FirebaseFirestoreSwift */,
 			);
 			productName = "S-Badge";
 			productReference = 212A28972A6D760C0018F8F4 /* S-Badge.app */;
@@ -1130,6 +1139,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2164244B2A89579E001E4494 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		216424562A8AC97F001E4494 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		216424582A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2164245A2A8ACB7A001E4494 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 210A50D72A84AD5C008AA69A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

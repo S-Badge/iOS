@@ -55,6 +55,10 @@ struct CommentMapView: View {
         .background(Color.white)
         .cornerRadius(20)
         .padding()
+        .onAppear{
+            comment = AppDelegate.fcmToken!
+        }
+        
     }
 }
 

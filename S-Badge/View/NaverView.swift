@@ -5,7 +5,7 @@ struct NaverView: View {
     let circleSize:CGFloat = 30
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            MapChoiceView()
+            FirstMapView()
             
             Button(action: {
                 isCommentSheetPresented.toggle() // 버튼을 누를 때 댓글 창 표시 여부 변경

@@ -7,6 +7,7 @@ import FirebaseFirestore
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     var db: Firestore! // Firestore 인스턴스 생성
+    static var fcmToken: String? // 전역 FCM 토큰 변수
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
@@ -34,13 +35,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
-
 extension AppDelegate: MessagingDelegate {
     
     // 파이어베이스 MessagingDelegate 설정
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("Firebase registration token: \(String(describing: fcmToken))")
-        
+        print("Firebase registration token: \(String(describing: fcmToken!))")
+        AppDelegate.fcmToken = fcmToken
         // Firestore에 FCM 토큰 저장
         if let fcmToken = fcmToken {
             let timestamp = Timestamp(date: Date())
@@ -53,6 +53,8 @@ extension AppDelegate: MessagingDelegate {
             db.collection("Token").document("device").setData(data) { error in
                 if let error = error {
                     print("Error saving FCM token to Firestore: \(error)")
+                    // 오류 발생 시 앱 종료
+                    fatalError("Error saving FCM token to Firestore: \(error)")
                 } else {
                     print("FCM token saved to Firestore")
                 }
@@ -63,6 +65,7 @@ extension AppDelegate: MessagingDelegate {
         // Note: This callback is fired at each app startup and whenever a new token is generated.
     }
 }
+
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     

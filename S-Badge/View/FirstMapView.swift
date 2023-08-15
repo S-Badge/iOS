@@ -16,13 +16,11 @@ struct FirstMapView: UIViewRepresentable {
             
             // Add blue markers for Seoul locations
             for location in SeoulLocationModel.seoulLocations {
-                let nmg = NMGLatLng(lat: location.latitude, lng: location.longitude)
+                let blueMarker = NMGLatLng(lat: location.latitude, lng: location.longitude)
                 
                 let marker = NMFMarker()
                 marker.iconImage = NMF_MARKER_IMAGE_BLUE // Use blue marker icon
-                marker.position = nmg
-                marker.width = 25
-                marker.height = 40
+                marker.position = blueMarker
                 marker.mapView = NMapView.mapView
             }
             if let userLocation = locationManager.userLocation {

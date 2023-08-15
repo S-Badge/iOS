@@ -48,7 +48,7 @@
 		2164244D2A89579E001E4494 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2164244C2A89579E001E4494 /* Alamofire */; };
 		2164244F2A8959A2001E4494 /* CoordinateToAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164244E2A8959A2001E4494 /* CoordinateToAddressViewModel.swift */; };
 		216424512A895AD3001E4494 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424502A895AD3001E4494 /* Config.swift */; };
-		216424532A895DB3001E4494 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424522A895DB3001E4494 /* TestView.swift */; };
+		216424532A895DB3001E4494 /* FloatingAddressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424522A895DB3001E4494 /* FloatingAddressBar.swift */; };
 		216424552A8968EB001E4494 /* MapChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216424542A8968EB001E4494 /* MapChoiceView.swift */; };
 		216424572A8AC97F001E4494 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 216424562A8AC97F001E4494 /* FirebaseFirestore */; };
 		216424592A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 216424582A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community */; };
@@ -138,7 +138,7 @@
 		216424492A895712001E4494 /* KakaoAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAddressModel.swift; sourceTree = "<group>"; };
 		2164244E2A8959A2001E4494 /* CoordinateToAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateToAddressViewModel.swift; sourceTree = "<group>"; };
 		216424502A895AD3001E4494 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		216424522A895DB3001E4494 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		216424522A895DB3001E4494 /* FloatingAddressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAddressBar.swift; sourceTree = "<group>"; };
 		216424542A8968EB001E4494 /* MapChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChoiceView.swift; sourceTree = "<group>"; };
 		2164245C2A8C0CB5001E4494 /* S-Badge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S-Badge.entitlements"; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 				2153FB1D2A7688460010F5E9 /* SettingsView.swift */,
 				216424452A8946F9001E4494 /* TempView.swift */,
 				216424472A89491D001E4494 /* CommentMapView.swift */,
-				216424522A895DB3001E4494 /* TestView.swift */,
+				216424522A895DB3001E4494 /* FloatingAddressBar.swift */,
 				216424542A8968EB001E4494 /* MapChoiceView.swift */,
 			);
 			path = View;
@@ -656,7 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				216424532A895DB3001E4494 /* TestView.swift in Sources */,
+				216424532A895DB3001E4494 /* FloatingAddressBar.swift in Sources */,
 				2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */,
 				2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */,
 				2164244F2A8959A2001E4494 /* CoordinateToAddressViewModel.swift in Sources */,
@@ -864,7 +864,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "S-Badge/S-BadgeDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;
@@ -900,7 +900,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "S-Badge/S-Badge.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";
 				DEVELOPMENT_TEAM = F5WP2FDW4U;
 				ENABLE_PREVIEWS = YES;

@@ -27,7 +27,7 @@ struct MainView: View {
                 .tag(Tab.map)
 
             // 두 번째 탭: 커뮤니티
-            TestView(coordinate: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780))
+            FloatingAddressBar(coordinate: CLLocationCoordinate2D(latitude: 37.5665, longitude: 126.9780))
                 .tabItem {
                     Label("커뮤니티", systemImage: "message")
                 }

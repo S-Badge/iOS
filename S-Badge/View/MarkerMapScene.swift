@@ -74,6 +74,13 @@ struct MarkerMapScene: UIViewRepresentable {
                 longitude: latlng.lng
             )
             print(parent.selectedLocation)
+//            let blueMarker = NMGLatLng(lat: latlng.lat, lng: latlng.lng)
+//            
+//            let marker = NMFMarker()
+//            marker.iconImage = NMF_MARKER_IMAGE_BLUE // Use blue marker icon
+//            marker.width = 60
+//            marker.height = 60
+//            marker.position = blueMarker
         }
         
     }

@@ -27,7 +27,7 @@ struct MainView: View {
                 .tag(Tab.map)
 
             // 두 번째 탭: 커뮤니티
-            MapChoiceView()
+            MapChoiceScene()
                 .tabItem {
                     Label("커뮤니티", systemImage: "message")
                 }

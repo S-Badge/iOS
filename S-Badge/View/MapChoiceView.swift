@@ -21,4 +21,5 @@ struct MapChoiceView: UIViewRepresentable {
         marker.position = centerCoordinate
         marker.mapView = uiView.mapView
     }
+    
 }

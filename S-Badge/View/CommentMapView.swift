@@ -21,7 +21,7 @@ struct CommentMapView: View {
                     Text(address)
                 }
             }
-            .pickerStyle(.wheel) // 피커 스타일을 wheel로 설정
+            .pickerStyle(.automatic) // 피커 스타일을 wheel로 설정
             .padding()
             
             TextEditor(text: $comment)

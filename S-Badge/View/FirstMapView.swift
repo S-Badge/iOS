@@ -29,8 +29,8 @@ struct FirstMapView: UIViewRepresentable {
                       print("마커 터치")
                     selectedLocation = CLLocationCoordinate2D(latitude: marker.position.lat, longitude: marker.position.lng)
                     print(selectedLocation)
-                    
-                      
+
+
                       return true
                     }
                 marker.mapView = naverMapView.mapView
@@ -69,6 +69,13 @@ struct FirstMapView: UIViewRepresentable {
             self.parent = parent
         }
         
-        // Implement touch delegate methods here
+        func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
+            
+            parent.selectedLocation = CLLocationCoordinate2D(
+                latitude: latlng.lat,
+                longitude: latlng.lng
+            )
+            print(parent.selectedLocation)
+        }
     }
 }

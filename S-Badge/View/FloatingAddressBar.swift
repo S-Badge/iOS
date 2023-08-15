@@ -5,7 +5,12 @@ import CoreLocation
 struct FloatingAddressBar: View {
     @StateObject private var CTAviewModel = CoordinateToAddressViewModel()
     @State private var receivedAddress: String?
-    @Binding var coordinate: CLLocationCoordinate2D
+    @Binding var coordinate: CLLocationCoordinate2D {
+        didSet {
+            fetchAddress()
+            print(coordinate)
+        }
+    }
     
     var body: some View {
         VStack {
@@ -22,10 +27,7 @@ struct FloatingAddressBar: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.orange.opacity(0.5), lineWidth: 5) // 주황색 테두리 라인 (투명도 적용)
                         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 3, y: 3) // 그림자 추가
-                                       
                 )
-                
-            
             
             Spacer()
         }
@@ -48,3 +50,4 @@ struct FloatingAddressBar: View {
         }
     }
 }
+

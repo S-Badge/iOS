@@ -3,13 +3,16 @@ import NMapsMap
 
 struct FirstMapView: UIViewRepresentable {
     @ObservedObject var locationManager = LocationManager()
-    @Binding var selectedLocation: CLLocationCoordinate2D?
+    @Binding var selectedLocation: CLLocationCoordinate2D
     
     func makeUIView(context: Context) -> NMFNaverMapView {
-        let NMapView = NMFNaverMapView()
-        NMapView.showZoomControls = true
-        NMapView.mapView.zoomLevel = 10
-        NMapView.showLocationButton = true
+        let naverMapView = NMFNaverMapView()
+        naverMapView.showZoomControls = true
+        naverMapView.mapView.zoomLevel = 10
+        naverMapView.showLocationButton = true
+        
+        // Assign the coordinator instance as the touch delegate
+        naverMapView.mapView.touchDelegate = context.coordinator
         
         DispatchQueue.main.async {
             // Add red markers for user location
@@ -22,7 +25,15 @@ struct FirstMapView: UIViewRepresentable {
                 let marker = NMFMarker()
                 marker.iconImage = NMF_MARKER_IMAGE_BLUE // Use blue marker icon
                 marker.position = blueMarker
-                marker.mapView = NMapView.mapView
+                marker.touchHandler = { (overlay) -> Bool in
+                      print("마커 터치")
+                    selectedLocation = CLLocationCoordinate2D(latitude: marker.position.lat, longitude: marker.position.lng)
+                    print(selectedLocation)
+                    
+                      
+                      return true
+                    }
+                marker.mapView = naverMapView.mapView
             }
             if let userLocation = locationManager.userLocation {
                 let nmg = NMGLatLng(lat: userLocation.lat, lng: userLocation.lng)
@@ -35,15 +46,29 @@ struct FirstMapView: UIViewRepresentable {
                 userMarker.position = nmg
                 userMarker.width = 25
                 userMarker.height = 40
-                userMarker.mapView = NMapView.mapView
-                NMapView.mapView.moveCamera(cameraUpdate)
+                userMarker.mapView = naverMapView.mapView
+                naverMapView.mapView.moveCamera(cameraUpdate)
             }
         }
         
-        return NMapView
+        return naverMapView
     }
     
     func updateUIView(_ uiView: NMFNaverMapView, context: Context) {
         // Do nothing
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    class Coordinator: NSObject, NMFMapViewTouchDelegate {
+        var parent: FirstMapView
+        
+        init(_ parent: FirstMapView) {
+            self.parent = parent
+        }
+        
+        // Implement touch delegate methods here
     }
 }

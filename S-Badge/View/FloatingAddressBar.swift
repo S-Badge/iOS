@@ -5,7 +5,7 @@ import CoreLocation
 struct FloatingAddressBar: View {
     @StateObject private var CTAviewModel = CoordinateToAddressViewModel()
     @State private var receivedAddress: String?
-    let coordinate: CLLocationCoordinate2D
+    @Binding var coordinate: CLLocationCoordinate2D
     
     var body: some View {
         VStack {

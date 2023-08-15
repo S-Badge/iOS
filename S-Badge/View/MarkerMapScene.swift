@@ -1,7 +1,7 @@
 import SwiftUI
 import NMapsMap
 
-struct FirstMapView: UIViewRepresentable {
+struct MarkerMapScene: UIViewRepresentable {
     @ObservedObject var locationManager = LocationManager()
     @Binding var selectedLocation: CLLocationCoordinate2D
     
@@ -15,8 +15,6 @@ struct FirstMapView: UIViewRepresentable {
         naverMapView.mapView.touchDelegate = context.coordinator
         
         DispatchQueue.main.async {
-            // Add red markers for user location
-            
             
             // Add blue markers for Seoul locations
             for location in SeoulLocationModel.seoulLocations {
@@ -49,6 +47,7 @@ struct FirstMapView: UIViewRepresentable {
                 userMarker.mapView = naverMapView.mapView
                 naverMapView.mapView.moveCamera(cameraUpdate)
             }
+            
         }
         
         return naverMapView
@@ -63,13 +62,12 @@ struct FirstMapView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, NMFMapViewTouchDelegate {
-        var parent: FirstMapView
+        var parent: MarkerMapScene
         
-        init(_ parent: FirstMapView) {
+        init(_ parent: MarkerMapScene) {
             self.parent = parent
         }
-        
-        func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
+        private func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng) {
             
             parent.selectedLocation = CLLocationCoordinate2D(
                 latitude: latlng.lat,
@@ -77,5 +75,6 @@ struct FirstMapView: UIViewRepresentable {
             )
             print(parent.selectedLocation)
         }
+        
     }
 }

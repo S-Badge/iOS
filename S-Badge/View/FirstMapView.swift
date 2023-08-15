@@ -3,6 +3,7 @@ import NMapsMap
 
 struct FirstMapView: UIViewRepresentable {
     @ObservedObject var locationManager = LocationManager()
+    @Binding var selectedLocation: CLLocationCoordinate2D?
     
     func makeUIView(context: Context) -> NMFNaverMapView {
         let NMapView = NMFNaverMapView()

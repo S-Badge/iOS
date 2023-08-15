@@ -53,6 +53,7 @@
 		216424572A8AC97F001E4494 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 216424562A8AC97F001E4494 /* FirebaseFirestore */; };
 		216424592A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 216424582A8ACB7A001E4494 /* FirebaseFirestoreCombine-Community */; };
 		2164245B2A8ACB7A001E4494 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2164245A2A8ACB7A001E4494 /* FirebaseFirestoreSwift */; };
+		2164245E2A8C158B001E4494 /* CommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2164245D2A8C158B001E4494 /* CommentButton.swift */; };
 		217017A52A73E3C8003E26EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217017A42A73E3C8003E26EE /* MainView.swift */; };
 		499F8064B3C687528CCA03B2 /* Pods_S_Badge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */; };
 		D13087A95808EE7C1C7262EC /* Pods_S_Badge_S_BadgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB036ECFC87E12EF45ADF8 /* Pods_S_Badge_S_BadgeUITests.framework */; };
@@ -141,6 +142,7 @@
 		216424522A895DB3001E4494 /* FloatingAddressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAddressBar.swift; sourceTree = "<group>"; };
 		216424542A8968EB001E4494 /* MapChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChoiceView.swift; sourceTree = "<group>"; };
 		2164245C2A8C0CB5001E4494 /* S-Badge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S-Badge.entitlements"; sourceTree = "<group>"; };
+		2164245D2A8C158B001E4494 /* CommentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentButton.swift; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				216424472A89491D001E4494 /* CommentMapView.swift */,
 				216424522A895DB3001E4494 /* FloatingAddressBar.swift */,
 				216424542A8968EB001E4494 /* MapChoiceView.swift */,
+				2164245D2A8C158B001E4494 /* CommentButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2164245E2A8C158B001E4494 /* CommentButton.swift in Sources */,
 				216424532A895DB3001E4494 /* FloatingAddressBar.swift in Sources */,
 				2153FB1E2A7688460010F5E9 /* SettingsView.swift in Sources */,
 				2153FB202A76D0F30010F5E9 /* MapMarkerView.swift in Sources */,

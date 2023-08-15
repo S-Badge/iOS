@@ -1,3 +1,4 @@
+//.fill(Color(red: 240/255, green: 240/255, blue: 240/255)) // 옅은 회색 배경
 import SwiftUI
 import CoreLocation
 
@@ -9,7 +10,7 @@ struct FloatingAddressBar: View {
     var body: some View {
         VStack {
             Rectangle()
-                .fill(Color(red: 240/255, green: 240/255, blue: 240/255)) // 옅은 회색 배경
+                .fill(Color.white) // 옅은 회색 배경
                 .overlay(
                     Text(receivedAddress ?? "데이터를 받고있습니다아...")
                         .font(.headline)

@@ -140,6 +140,7 @@
 		216424502A895AD3001E4494 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		216424522A895DB3001E4494 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		216424542A8968EB001E4494 /* MapChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapChoiceView.swift; sourceTree = "<group>"; };
+		2164245C2A8C0CB5001E4494 /* S-Badge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "S-Badge.entitlements"; sourceTree = "<group>"; };
 		217017A42A73E3C8003E26EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		53C1E5B0EF897689FED1D45B /* Pods_S_Badge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_Badge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581C0FC7B803FE492830B73B /* Pods-S-BadgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.release.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -283,6 +284,7 @@
 		212A28992A6D760C0018F8F4 /* S-Badge */ = {
 			isa = PBXGroup;
 			children = (
+				2164245C2A8C0CB5001E4494 /* S-Badge.entitlements */,
 				216424422A88661D001E4494 /* S-BadgeDebug.entitlements */,
 				210A50D22A84AC98008AA69A /* GoogleService-Info.plist */,
 				212A289A2A6D760C0018F8F4 /* S_BadgeApp.swift */,
@@ -896,6 +898,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "S-Badge/S-Badge.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"S-Badge/Preview Content\"";

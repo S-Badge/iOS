@@ -62,6 +62,7 @@ struct CommentMapView: View {
     }
 }
 
+
 struct CommentMapView_Previews: PreviewProvider {
     static var previews: some View {
         CommentMapView(isPresented: .constant(true))

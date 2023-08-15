@@ -16,12 +16,12 @@ struct CommentMapView: View {
     
     var body: some View {
         VStack {
-            Picker("주소 선택", selection: $selectedAddress) {
+            Picker("알림 선택", selection: $selectedAddress) {
                 ForEach(addresses, id: \.self) { address in
                     Text(address)
                 }
             }
-            .pickerStyle(.automatic) // 피커 스타일을 wheel로 설정
+            .pickerStyle(.navigationLink)
             .padding()
             
             TextEditor(text: $comment)
@@ -62,9 +62,3 @@ struct CommentMapView: View {
     }
 }
 
-
-struct CommentMapView_Previews: PreviewProvider {
-    static var previews: some View {
-        CommentMapView(isPresented: .constant(true))
-    }
-}

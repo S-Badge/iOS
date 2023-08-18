@@ -1,7 +1,7 @@
 import SwiftUI
 import NMapsMap
 
-struct MarkerMapScene: UIViewRepresentable {
+struct MapMarkerScene: UIViewRepresentable {
     @ObservedObject var locationManager = LocationManager()
     @Binding var selectedLocation: CLLocationCoordinate2D
     
@@ -62,9 +62,9 @@ struct MarkerMapScene: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, NMFMapViewTouchDelegate {
-        var parent: MarkerMapScene
+        var parent: MapMarkerScene
         
-        init(_ parent: MarkerMapScene) {
+        init(_ parent: MapMarkerScene) {
             self.parent = parent
         }
         private func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng) {

@@ -9,7 +9,7 @@ struct NaverView: View {
     var body: some View {
         ZStack() {
             
-            MarkerMapScene(selectedLocation: $selectedLocation)
+            MapMarkerScene(selectedLocation: $selectedLocation)
             VStack {
                 Rectangle()
                     .fill(Color.white) // 옅은 회색 배경

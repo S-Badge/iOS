@@ -10,7 +10,7 @@
 		1889E09695CA9A6AE408DABB /* Pods_SBadgeNoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089375A42992ED18069C4AF /* Pods_SBadgeNoti.framework */; };
 		210A50D32A84AC98008AA69A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 210A50D22A84AC98008AA69A /* GoogleService-Info.plist */; };
 		210A50DB2A84C082008AA69A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 210A50DA2A84C082008AA69A /* FirebaseMessaging */; };
-		211216982A7980B800FA58A8 /* MarkerMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* MarkerMapScene.swift */; };
+		211216982A7980B800FA58A8 /* MapMarkerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216972A7980B800FA58A8 /* MapMarkerScene.swift */; };
 		2112169A2A7982CB00FA58A8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216992A7982CB00FA58A8 /* LocationManager.swift */; };
 		2112169D2A79841D00FA58A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112169C2A79841D00FA58A8 /* Model.swift */; };
 		211216A12A79847A00FA58A8 /* NaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211216A02A79847A00FA58A8 /* NaverView.swift */; };
@@ -103,7 +103,7 @@
 		07C2EF734694288DA18A3A1E /* Pods-SBadgeNoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBadgeNoti.release.xcconfig"; path = "Target Support Files/Pods-SBadgeNoti/Pods-SBadgeNoti.release.xcconfig"; sourceTree = "<group>"; };
 		13FF132B01C7EEC86879664E /* Pods-S-BadgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S-BadgeTests.debug.xcconfig"; path = "Target Support Files/Pods-S-BadgeTests/Pods-S-BadgeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		210A50D22A84AC98008AA69A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Desktop/공모전/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		211216972A7980B800FA58A8 /* MarkerMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerMapScene.swift; sourceTree = "<group>"; };
+		211216972A7980B800FA58A8 /* MapMarkerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerScene.swift; sourceTree = "<group>"; };
 		211216992A7982CB00FA58A8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2112169C2A79841D00FA58A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		211216A02A79847A00FA58A8 /* NaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverView.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 				212A28C62A6DDB370018F8F4 /* AppDelegate.swift */,
 				212A28C42A6DD92C0018F8F4 /* BluetoothManager.swift */,
 				2153FB1B2A75229E0010F5E9 /* DirectionMapView.swift */,
-				211216972A7980B800FA58A8 /* MarkerMapScene.swift */,
+				211216972A7980B800FA58A8 /* MapMarkerScene.swift */,
 				217017A42A73E3C8003E26EE /* MainView.swift */,
 				2153FB1F2A76D0F30010F5E9 /* MapMarkerView.swift */,
 				211216AE2A7E88CF00FA58A8 /* MapViewWithHeading.swift */,
@@ -675,7 +675,7 @@
 				212A28C52A6DD92C0018F8F4 /* BluetoothManager.swift in Sources */,
 				211216AF2A7E88CF00FA58A8 /* MapViewWithHeading.swift in Sources */,
 				217017A52A73E3C8003E26EE /* MainView.swift in Sources */,
-				211216982A7980B800FA58A8 /* MarkerMapScene.swift in Sources */,
+				211216982A7980B800FA58A8 /* MapMarkerScene.swift in Sources */,
 				216424462A8946F9001E4494 /* TempView.swift in Sources */,
 				211216A12A79847A00FA58A8 /* NaverView.swift in Sources */,
 				212A289B2A6D760C0018F8F4 /* S_BadgeApp.swift in Sources */,
